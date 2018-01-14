@@ -11,6 +11,8 @@
     <spring:url value="/resources/styles.css" var="stylesCss" />
     <spring:url value="/resources/set-background.js" var="setBackgroundJs" />
     <spring:url value="/resources/tweet.svg" var="tweetSvg" />
+    <spring:url value="/resources/abn-amro-logo-1.png" var="abn" />
+    <spring:url value="/resources/aws.png" var="aws" />
 
     <link href="${stylesCss}" rel="stylesheet">
     <link href="${gradientsCss}" rel="stylesheet">
@@ -41,18 +43,18 @@
       </header>
 
       <div class="message">
-          <a class="twitter-link" href="http://twitter.com/home/?status=I%20created%20a%20project%20with%20AWS%20CodeStar!%20%23AWS%20%23AWSCodeStar%20https%3A%2F%2Faws.amazon.com%2Fcodestar">
-              <img src="${tweetSvg}" alt="Tweet"/>
-          </a>
-        <div class="text">
-          <h1>Congratulations!</h1>
-          <h2>You just created a Java Spring web application.</h2>
+               <img src="${aws}" alt="AWS"/>
+          
+               <img src="${abn}" alt="ABN AMRO"/>
+         <div class="text">
+          <h1>AWS Text Rekognition & Analytics</h1>
+          <h2></h2>
         </div>
       </div>
     </div>
 
     <footer>
-      <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.</p>
+      <p class="footer-contents">ABN AMRO demo web</p>
     </footer>
 
     <script src={$setBackgroundJs}"></script>
